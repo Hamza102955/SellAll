@@ -91,7 +91,7 @@ class SellAll extends PluginBase{
                             return true;
                             break;
 
-                        case "all":
+                        case "handall":
                             $item = $sender->getInventory()->getItemInHand();
                             $inventory = $sender->getInventory();
                             $contents = $inventory->getContents();
@@ -135,7 +135,7 @@ class SellAll extends PluginBase{
                             break;
 
 						case "inv":
-                        case "inventory":
+                        case "all":
                             $inv = $sender->getInventory()->getContents();
                             $revenue = 0;
                             foreach($inv as $item){
